@@ -51,6 +51,55 @@ cd xv6-public
 make qemu
 ```
 
+Ahora veamos algo que sale en el siguiente link: https://github.com/remzi-arpacidusseau/ostep-projects/blob/master/INSTALL-xv6.md
+
+
+Inicialmente de: https://www.qemu.org/download/#linux
+
+```
+#
+sudo apt-get install qemu-system
+#
+sudo apt-get install qemu-user-static
+```
+
+La documentacion de qemu esta en: https://www.qemu.org/docs/master/
+
+Con estos si dió.
+
+La pregunta es si queremos emular...
+
+
+```
+git clone https://github.com/mit-pdos/xv6-public.git
+cd xv6-public
+make TOOLPREFIX=riscv64-linux-gnu- qemu
+```
+
+Para una mayor explicacon: https://oslab.kaist.ac.kr/xv6-tools/
+
+
+
+https://github.com/riscv-collab/riscv-gnu-toolchain/issues/670
+
+
+
+## Otro intento
+
+
+https://github.com/mit-pdos/xv6-riscv.git
+
+
+Hay si dio.
+
+```
+cd xv6-riscv/
+make qemu
+```
+
+https://github.com/riscv-collab/riscv-gnu-toolchain
+
+
 
 
 
